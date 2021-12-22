@@ -1,0 +1,14 @@
+hours= float(input("Enter Hours: "))
+rate= float(input("Enter Rate: "))
+pay = hours*rate
+print("Regular Pay: ",pay)
+ot= float(hours-40)
+otrate= float(rate*0.5)
+otpay= float(ot*otrate)
+if (ot>0.01):  
+    print("Overtime Hours: ", ot)
+    print("Overtime Rate: ", otrate)
+    print("Overtime Pay: ", otpay)
+    print("Total Pay: ",otpay+pay)
+
+
